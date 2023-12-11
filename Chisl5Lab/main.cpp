@@ -10,7 +10,7 @@ double function(double x) {
 double I1(double a, double b, int n) {
     double _In = 0;
     double h = (b - a) / n;
-    for (double x = a; x <= b; x += h) {
+    for (double x = a; x < b; x += h) {
         _In += function(x);
     }
     return _In;
